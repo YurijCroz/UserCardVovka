@@ -1,0 +1,139 @@
+/*
+relative -относительно себя двигается
+при этом место элемента остается
+и все соседи остаются на своих местах
+(top, left, rigth, botom)
+child-absolute parent-static
+место элемента child теперь свободно и
+его используют соседи (он теперь находится 
+в другом слое)
+сдвиг (top, left, rigth, botom) будет 
+относительно body или ближайшего предка
+в не в статическом позиционировании
+child-absolute parent-relative
+тоже
+сдвиг (top, left, rigth, botom) будет 
+относительно parent
+fixed - тоже viewport
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cardContainer {
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: beige;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0.3em 1.5em black;
+}
+
+.headerCard {
+    border: 1px solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    background: linear-gradient(rgba(99, 19, 19, 0.493), 50%, rgb(99, 19, 19));
+}
+
+.userPhoto {
+}
+
+.userPh {
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    position: absolute;
+    top: 66%;
+    left: 25%;
+    z-index: 1;
+}
+
+.footerCard {
+    border: 1px solid;
+    border-top: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: beige;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    top: 300px;
+    text-align: center;
+}
+
+
+.infoCard {
+    position: relative;
+    top: 110px;
+
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.userName {
+    color: black;
+}
+
+.userJob {
+    position: relative;
+    top: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.buttonFollow {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    background: linear-gradient(rgba(185, 192, 199, 0.493), 50%, rgb(96, 102, 109));
+    width: 120px;
+    height: 45px;
+    position: relative;
+    top: 40px;
+    color: black;
+    display: inline-block;
+}
+
+.buttonFollow p {
+    position: relative;
+    top: 7px;
+}
+
+.buttonFollow a {
+    text-decoration: none;
+    color: black;
+}
+
+.buttonFollow p img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 5px;
+    bottom: 1px;
+}
+
+.totalFlow {
+    position: relative;
+    top: 55px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
