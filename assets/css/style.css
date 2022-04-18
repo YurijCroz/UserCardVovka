@@ -37,6 +37,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 0.3em 1.5em black;
+    overflow: hidden;
 }
 
 .headerCard {
@@ -47,6 +48,40 @@ body {
     height: 300px;
     position: absolute;
     background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 20px, #465298 10px);
+}
+
+.squareB {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+}
+
+.squareL {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 150px;
+    height: 150px;
+    transform: rotate(45deg);
+}
+
+.sqp1 {
+    position: absolute;
+    top: -40px;
+    left: -50px;
+}
+
+.sqp2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    right: -60px;
+    bottom: 30px;
+}
+
+.sqp3 {
+    position: absolute;
+    top: 60px;
+    left: 110px;
 }
 
 .userPhoto {
